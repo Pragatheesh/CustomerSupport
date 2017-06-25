@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/separator"
+        card_view:cardCornerRadius="@dimen/button_radius"
+        card_view:cardElevation="@dimen/button_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/card_item_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/btn_top_margin"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/card_item_padding"
+                android:weightSum="100"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                <ImageView
+                    android:id="@+id/ticket_type"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/ticket_type"
+                    android:tint="@color/high"
+                    app:srcCompat="@drawable/ic_error_black_24dp" />
+
+                <TextView
+                    android:id="@+id/ticket_subject"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:paddingLeft="@dimen/card_item_small_margin"
+                    android:paddingStart="@dimen/card_item_small_margin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textNormal"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/ticket_sla"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/sla_violated"
+                    android:tint="@color/urgent"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_error_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/appbar_padding_top"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/card_item_padding"
+                android:weightSum="100"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/ticket_eta"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:paddingLeft="@dimen/card_item_small_margin"
+                    android:paddingStart="@dimen/card_item_small_margin"
+                    android:textColor="@color/textDark"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/ticket_work_label"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/time_logged"
+                    android:tint="@color/textLight"
+                    app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+                <TextView
+                    android:id="@+id/ticket_work"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:textColor="@color/textDark" />
+
+                <ImageView
+                    android:id="@+id/ticket_comment_label"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/comments"
+                    android:tint="@color/textLight"
+                    app:srcCompat="@drawable/ic_comment_black_24dp" />
+
+                <TextView
+                    android:id="@+id/ticket_comment"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:textColor="@color/textDark" />
+
+                <ImageView
+                    android:id="@+id/ticket_priority"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:contentDescription="@string/priority"
+                    android:tint="@color/low"
+                    app:srcCompat="@drawable/ic_arrow_downward_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/shades"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_item_user_section"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/ticket_requester_avatar"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="@dimen/card_item_avatar"
+                    android:layout_weight="15"
+                    android:contentDescription="@string/ticket_user_avatar" />
+
+                <TextView
+                    android:id="@+id/ticket_requester"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:paddingLeft="@dimen/button_radius"
+                    android:paddingStart="@dimen/button_radius"
+                    android:textColor="@color/textLight"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/ticket_submitter"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:textColor="@color/textLight" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

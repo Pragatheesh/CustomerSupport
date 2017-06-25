@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B71C1C</color>
+    <color name="colorPrimaryDark">#D50000</color>
+    <color name="colorAccent">#D50000</color>
+
+    <!-- Text Colours -->
+    <color name="textNormal">#9D9D9D</color>
+    <color name="textLight">#909090</color>
+    <color name="textDark">#605F5F</color>
+
+    <!-- Button Colours -->
+    <color name="btnRed">#9F1717</color>
+
+    <!-- Priorities -->
+    <color name="urgent">#D50000</color>
+    <color name="high">#F9A825</color>
+    <color name="low">#00C853</color>
+
+    <!-- Others -->
+    <color name="shades">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+</resources>

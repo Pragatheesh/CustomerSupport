@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Customer Support</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password address is invalid</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="logo_description">The company logo to identify the brand</string>
+    <string name="login_error">Invalid email and/or password</string>
+    <string name="authenticating">Authenticating User!</string>
+
+    <!-- LOGIN CONSTANTS -->
+    <string name="scope">all_all</string>
+    <string name="console">AGENT_CONSOLE</string>
+    <string name="clientID" tools:ignore="TypographyDashes">e8ea7bb0-5026-11e7-a69b-b153a7c332b9</string>
+
+    <!-- Common -->
+    <string name="feature_to_implement">Feature to be implemented!</string>
+    <string name="invalid_network">Invalid network request made!</string>
+    <string name="network_error">Please connect to WIFI or mobile data!</string>
+
+    <!-- My Tickets -->
+    <string name="title_activity_my_tickets">My Tickets</string>
+    <string name="completed_message">Opps! \nThis feature is not yet implemented. Please visit back later.</string>
+    <string name="ticket_type">The type of ticket</string>
+    <string name="sla_violated">The SLA is violated</string>
+    <string name="priority">The priority level of the ticket</string>
+    <string name="time_logged">Time logged for this ticket</string>
+    <string name="comments">Number of comments made on ticket</string>
+    <string name="ticket_user_avatar">The user avatar images</string>
+    <string name="tickets_request_failure">Failed to retrieve tickets. Please logout and try with a new session!</string>
+
+    <!-- Profile -->
+    <string name="title_activity_profile">Profile</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="birthday_icon">The birthday icon</string>
+    <string name="gender_icon">The gender icon</string>
+    <string name="phone_icon">The phone icon</string>
+    <string name="email_icon">The email icon</string>
+    <string name="location_icon">The location icon</string>
+    <string name="verified_icon">The contacts verified icon</string>
+    <string name="retrieving_profile">Retrieving your information.</string>
+
+    <!-- Menu Items -->
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_logout">Logout</string>
+    <string name="search_break">Once implemented, the user can search tickets!</string>
+    <string name="filter_break">Once implemented, the user will be able to filter tickets using different parameters!</string>
+
+    <!-- Ticket Details -->
+    <string name="title_activity_ticket">Ticket Detail</string>
+    <string name="ticket_id">Ticket ID :</string>
+    <string name="response">Response :</string>
+    <string name="token_id_error">Unable to retrieve token id</string>
+    <string name="retrieving_information">Retrieving information</string>
+    <string name="ticket_not_found">Fail To Find Ticket</string>
+</resources>
