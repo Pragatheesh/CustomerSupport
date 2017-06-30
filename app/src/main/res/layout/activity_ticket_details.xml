@@ -182,7 +182,7 @@
                     android:weightSum="100">
 
                     <ImageView
-                        android:id="@+id/ticket_requester_avatar"
+                        android:id="@+id/ticket_requester_avatar_d"
                         android:layout_width="@dimen/zero_dp"
                         android:layout_height="@dimen/card_item_avatar"
                         android:layout_weight="15"

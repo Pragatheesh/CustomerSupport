@@ -66,7 +66,7 @@ public class TicketDetails extends AppCompatActivity {
         mType = (ImageView) findViewById(R.id.ticket_type);
         mSLA = (ImageView) findViewById(R.id.ticket_sla);
         mPriority = (ImageView) findViewById(R.id.ticket_priority);
-        mRequesterAvatar = (ImageView) findViewById(R.id.ticket_requester_avatar);
+        mRequesterAvatar = (ImageView) findViewById(R.id.ticket_requester_avatar_d);
 
         mSubject = (TextView) findViewById(R.id.ticket_subject);
         mReference = (TextView) findViewById(R.id.ticket_reference);
