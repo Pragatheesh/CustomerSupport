@@ -2,6 +2,9 @@ package com.pg.customersupport.model.ticket;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.pg.customersupport.model.commons.Contact;
+
+import java.util.List;
 
 /**
  * The model for the requester of a ticket
@@ -41,6 +44,9 @@ public class Requester {
     @SerializedName("googleplus")
     @Expose
     private String googleplus;
+    @SerializedName("contacts")
+    @Expose
+    private List<Contact> contacts = null;
 
     public String getId() {
         return id;
@@ -120,6 +126,23 @@ public class Requester {
 
     public void setGoogleplus(String googleplus) {
         this.googleplus = googleplus;
+    }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
+    }
+
+    /**
+     * To get the full name of the user
+     *
+     * @return the requester full name
+     */
+    public String getFullName() {
+        return (name == null ? "Nor Specified" : name);
     }
 
     @Override

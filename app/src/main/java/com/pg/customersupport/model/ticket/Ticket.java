@@ -37,6 +37,9 @@ public class Ticket {
     @SerializedName("subject")
     @Expose
     private String subject;
+    @SerializedName("reference")
+    @Expose
+    private String reference;
     @SerializedName("description")
     @Expose
     private String description;
@@ -61,6 +64,9 @@ public class Ticket {
     @SerializedName("created_at")
     @Expose
     private String createdAt;
+    @SerializedName("events")
+    @Expose
+    private List<Event> events = null;
 
     public String getId() {
         return id;
@@ -180,6 +186,22 @@ public class Ticket {
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public String getReference() {
+        return reference;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
+    }
+
+    public List<Event> getEvents() {
+        return events;
+    }
+
+    public void setEvents(List<Event> events) {
+        this.events = events;
     }
 
     @Override

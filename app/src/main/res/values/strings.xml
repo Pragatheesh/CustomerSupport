@@ -57,10 +57,10 @@
     <string name="filter_break">Once implemented, the user will be able to filter tickets using different parameters!</string>
 
     <!-- Ticket Details -->
-    <string name="title_activity_ticket">Ticket Detail</string>
-    <string name="ticket_id">Ticket ID :</string>
-    <string name="response">Response :</string>
+    <string name="title_activity_ticket">Ticket Detail</string>>
     <string name="token_id_error">Unable to retrieve token id</string>
     <string name="retrieving_information">Retrieving information</string>
     <string name="ticket_not_found">Fail To Find Ticket</string>
+    <string name="requestor_information">Requestor Information</string>
+    <string name="activity_label">Events</string>
 </resources>
