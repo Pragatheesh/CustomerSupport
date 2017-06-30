@@ -44,6 +44,9 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setHomeButtonEnabled(true);
+
         PreferenceManager preferenceManager = new PreferenceManager(getApplicationContext());
         mUserService = UserServiceGenerator.createService(UserApiService.class,
                 preferenceManager.getAccessToken());

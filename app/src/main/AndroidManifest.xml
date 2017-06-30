@@ -31,10 +31,22 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ProfileActivity"
-            android:label="@string/title_activity_profile" />
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.pg.customersupport.MyTicketsActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pg.customersupport.MyTicketsActivity" />
+        </activity>
         <activity
             android:name=".TicketDetails"
-            android:label="@string/title_activity_ticket" />
+            android:label="@string/title_activity_ticket"
+            android:parentActivityName="com.pg.customersupport.MyTicketsActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pg.customersupport.MyTicketsActivity" />
+        </activity>
     </application>
 
 </manifest>
