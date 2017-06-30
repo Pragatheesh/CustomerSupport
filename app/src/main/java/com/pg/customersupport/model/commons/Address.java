@@ -96,7 +96,11 @@ public class Address {
      * @return the human readable address
      */
     public String getReadableAddress() {
-        return number + ", " + street + ", " + city + ", " +
-                province + ", " + country + ", " + zipcode;
+        return (number == null ? "" : number + ", ") +
+                (street == null ? "" : street + ", ") +
+                (city == null ? "" : city + ", ") +
+                (province == null ? "" : province + ", ") +
+                (country == null ? "" : country + ", ") +
+                (zipcode == null ? "" : zipcode);
     }
 }

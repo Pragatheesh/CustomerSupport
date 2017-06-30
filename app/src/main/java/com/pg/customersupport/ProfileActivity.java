@@ -75,9 +75,9 @@ public class ProfileActivity extends AppCompatActivity {
 
         mName.setText(fullName);
         mBirthday.setText(mUser.getBirthday().substring(0, 10));
-        mGender.setText(mUser.getGender().toUpperCase());
-        mAddress.setText(mUser.getAddress().getReadableAddress());
-        mPhone.setText(mUser.getPhoneNumber().getContact());
+        mGender.setText((mUser.getGender() == null) ? getString(R.string.not_specified) : mUser.getGender().toUpperCase());
+        mAddress.setText(mUser.getAddress() == null ? getString(R.string.not_specified) : mUser.getAddress().getReadableAddress());
+        mPhone.setText(mUser.getPhoneNumber() != null ? getString(R.string.not_specified) : mUser.getPhoneNumber().getContact());
         mEmailInfo.setText(mUser.getEmail().getContact());
         mEmail.setText(mUser.getEmail().getContact());
 

@@ -45,6 +45,7 @@
     <string name="location_icon">The location icon</string>
     <string name="verified_icon">The contacts verified icon</string>
     <string name="retrieving_profile">Retrieving your information.</string>
+    <string name="not_specified">Not Specified</string>
 
     <!-- Menu Items -->
     <string name="action_search">Search</string>
