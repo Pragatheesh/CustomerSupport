@@ -97,7 +97,7 @@ public class TicketDetails extends AppCompatActivity {
      */
     private void drawUI() {
         drawTicketMetaInfo();
-        if (mTicket.getRequester().getContacts() != null)
+        if (mTicket.getRequester() != null && mTicket.getRequester().getContacts() != null)
             drawRequesterContacts();
 
         mEventsList = mTicket.getEvents();

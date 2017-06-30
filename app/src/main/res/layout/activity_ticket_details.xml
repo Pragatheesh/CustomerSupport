@@ -20,7 +20,9 @@
             android:layout_width="@dimen/zero_dp"
             android:layout_height="match_parent"
             android:layout_weight="10"
-            android:contentDescription="@string/ticket_type" />
+            android:contentDescription="@string/ticket_type"
+            android:tint="@color/high"
+            app:srcCompat="@drawable/ic_error_black_24dp" />
 
         <TextView
             android:id="@+id/ticket_subject"
@@ -147,6 +149,7 @@
                 android:background="?android:attr/listDivider" />
 
             <LinearLayout
+                android:id="@+id/requester_panel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/btn_top_margin"
