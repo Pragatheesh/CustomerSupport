@@ -9,8 +9,8 @@ The customer support portal for the agent of a compant to view and resolve issue
 1. Authenticate a user log-in (The service will provide a JWT access token as response) **- COMPLETED**
 2. Access the backend API to retrieve data **- COMPLETED**
 3. Show the relevant data in an attractive format
-  1. List all the tickets which are assigned to the user **- COMPLETED**
-  2. Create a Detail View to show more information (Optional) **- PARTIALLY IMPLEMENTED**
+      a. List all the tickets which are assigned to the user **- COMPLETED**
+      b. Create a Detail View to show more information (Optional) **- PARTIALLY IMPLEMENTED**
 ---------------------------------------------------------------
 
 I am proud to share details of my implementations in the project within the limited time duration provided
